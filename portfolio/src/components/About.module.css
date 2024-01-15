@@ -1,32 +1,86 @@
 .aboutContainer {
-    display: flex;
-    flex: 3;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    width: 100%;
-    background-color: aliceblue;
-    font-family: inherit;
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  font-family: inherit;
+  padding-bottom: 1rem;
+}
+
+.aboutContainer .centeredLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.aboutContainer .buttonLink {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.aboutContainer .buttonLink:hover {
+  color: black;
+  border: 1px solid black;
 }
 
 .aboutContainer h2 {
-    text-align: center;
-    padding: 1em 0.5em;
+  text-align: center;
+  font-size: 2em;
+  padding: 1em 0.5em;
 }
 
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 2rem;
+}
 
+.left {
+  max-width: 50%;
+}
 
+.right {
+  max-width: 50%;
+}
 
+.textDinamic1,
+.textDinamic2,
+.text3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 1em 0;
+}
 
+.textDinamic1 span {
+  font-style: italic;
+  opacity: 0.8;
+  color: darkorchid;
+}
 
+.textDinamic2 span {
+  font-style: italic;
+  opacity: 0.8;
+  color: lightskyblue;
+}
 
+.right ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  font-style: oblique;
+  color: darkcyan;
+  font-weight: 300;
+}
 
-
-
-
-
-
-img {
+.left img {
   height: 400px;
   width: 400px;
   object-fit: cover;

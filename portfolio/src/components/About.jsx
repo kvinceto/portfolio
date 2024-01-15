@@ -20,7 +20,7 @@ function About() {
   return (
     <section className={styles.aboutContainer}>
       <div>
-        <h2 className={styles.title}>About Me</h2>
+        <h2>About Me</h2>
         <div className={styles.content}>
           <div className={styles.left}>
             <img src={profilePicture} alt="Profile picture of Krasimir Iliev" />
@@ -36,31 +36,45 @@ function About() {
                 I'm Krasimir and I'm a <span>{developerType}</span>
               </div>
             )}
-            <p>
-              Enthusiastic junior Software Developer, eager to apply coding
-              skills and learn from experienced professionals. <br /> Capable of
-              mastering new technologies. <br /> Actively seeking a junior
-              developer position in a supportive environment that encourages
-              skill development.
-            </p>
+            <ul>
+              <li>
+                Enthusiastic junior Software Developer, eager to apply coding
+                skills and learn from experienced professionals.
+              </li>
+              <li>Capable of mastering new technologies.</li>
+              <li>
+                Actively seeking a junior developer position in a supportive
+                environment that encourages skill development.
+              </li>
+            </ul>
             <div class={styles.text3}>Why Work With Me</div>
-            <p>
-              I'am experienced in collaborating with individuals of diverse age
-              groups, fostering effective communication and teamwork across
-              various demographics. <br /> Cultivated a global perspective by
-              working in an international company with a team spanning three
-              continents. <br /> "Proven ability to thrive in high-pressure
-              situations, consistently delivering quality results and
-              maintaining composure while working under tight deadlines."
-            </p>
-            <a
-              href="img/JS Front-End - October 2023 - Certificate.pdf"
-              target="blank"
-              download
-            >
-              Download CV
-            </a>
+            <ul>
+              <li>
+                I'am experienced in collaborating with individuals of diverse
+                age groups, fostering effective communication and teamwork
+                across various demographics.
+              </li>
+              <li>
+                Cultivated a global perspective by working in an international
+                company with a team spanning three continents.
+              </li>
+              <li>
+                Proven ability to thrive in high-pressure situations,
+                consistently delivering quality results and maintaining
+                composure while working under tight deadlines.
+              </li>
+            </ul>
           </div>
+        </div>
+        <div className={styles.centeredLink}>
+          <a
+            href="img/JS Front-End - October 2023 - Certificate.pdf"
+            target="blank"
+            download
+            className={styles.buttonLink}
+          >
+            Download CV
+          </a>
         </div>
       </div>
     </section>
