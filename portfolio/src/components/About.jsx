@@ -1,0 +1,70 @@
+import styles from "../components/About.module.css";
+import profilePicture from "../../public/IMG_20230909_191105064_HDR.jpg";
+import React, { useState, useEffect } from "react";
+
+function About() {
+  const [developerType, setDeveloperType] = useState("C# Web Developer");
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDeveloperType((prevType) =>
+        prevType === "C# Web Developer"
+          ? "Fullstack Developer"
+          : "C# Web Developer"
+      );
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  return (
+    <section className={styles.aboutContainer}>
+      <div>
+        <h2 className={styles.title}>About Me</h2>
+        <div className={styles.content}>
+          <div className={styles.left}>
+            <img src={profilePicture} alt="Profile picture of Krasimir Iliev" />
+          </div>
+          <div className={styles.right}>
+            {developerType === "C# Web Developer" && (
+              <div className={styles.textDinamic1}>
+                I'm Krasimir and I'm a <span>{developerType}</span>
+              </div>
+            )}
+            {developerType === "Fullstack Developer" && (
+              <div className={styles.textDinamic2}>
+                I'm Krasimir and I'm a <span>{developerType}</span>
+              </div>
+            )}
+            <p>
+              Enthusiastic junior Software Developer, eager to apply coding
+              skills and learn from experienced professionals. <br /> Capable of
+              mastering new technologies. <br /> Actively seeking a junior
+              developer position in a supportive environment that encourages
+              skill development.
+            </p>
+            <div class={styles.text3}>Why Work With Me</div>
+            <p>
+              I'am experienced in collaborating with individuals of diverse age
+              groups, fostering effective communication and teamwork across
+              various demographics. <br /> Cultivated a global perspective by
+              working in an international company with a team spanning three
+              continents. <br /> "Proven ability to thrive in high-pressure
+              situations, consistently delivering quality results and
+              maintaining composure while working under tight deadlines."
+            </p>
+            <a
+              href="img/JS Front-End - October 2023 - Certificate.pdf"
+              target="blank"
+              download
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default About;
