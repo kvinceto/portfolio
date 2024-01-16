@@ -17,7 +17,7 @@ function Home() {
   }, []);
 
   return (
-    <section className={styles.homeContainer}>
+    <section id="home" className={styles.homeContainer}>
       <div className={styles.text1}>Hello, This is</div>
       <div className={styles.text2}>Krasimir Iliev</div>
       {developerType === "Software Developer" && (

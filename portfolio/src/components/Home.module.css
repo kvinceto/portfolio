@@ -10,6 +10,8 @@
   background-attachment: fixed;
   flex: 2;
   margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .text1 {

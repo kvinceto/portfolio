@@ -6,31 +6,27 @@ function Navigation() {
 
   return (
     <section className={styles.navContainer}>
-      <p className={styles.logo} onClick={navigate("/")}>
+      <p className={styles.logo} onClick={() => navigate("/")}>
         Portfolio
       </p>
       <ul>
         <li>
-          <a href="" onClick={navigate("Home")}>
-            Home
-          </a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="" onClick={navigate("About")}>
-            About
-          </a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="">Education</a>
+          <a href="#education">Education</a>
         </li>
         <li>
-          <a href="">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </section>
