@@ -1,0 +1,39 @@
+.projectsContainer {
+  display: flex;
+  flex: 5;
+  flex-direction: column;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: aliceblue;
+}
+
+.projectsContainer h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.projectsContainer .projectDiv h3 a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.projectsContainer .projectDiv h3 a:hover {
+  text-decoration: underline;
+  color: magenta;
+}
+
+.projectDiv {
+  margin: 1rem 0;
+  width: 60%;
+  border-bottom: 1px dashed white;
+  padding-bottom: 1rem;
+}
+
+.projectDiv h4 {
+  margin: 1rem 0 0.5rem 0;
+}

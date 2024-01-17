@@ -23,9 +23,11 @@
   flex: 1;
 }
 
-.navContainer .logo {
+.navContainer .logo a {
   margin-left: 3rem;
   font-size: 2rem;
+  text-decoration: none;
+  color: #f0f0f0;
 }
 
 .navContainer ul {
@@ -43,4 +45,8 @@
 .navContainer ul li a {
   text-decoration: none;
   color: #f0f0f0;
+}
+
+.navContainer ul li a:hover {
+  color: blueviolet;
 }
