@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
   flex: 4;
   background: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center;
@@ -12,7 +11,8 @@
   background-attachment: fixed;
   color: aliceblue;
   font-family: inherit;
-  padding: 2rem 5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .educationContainer h2 {
@@ -22,10 +22,17 @@
 
 .sertificates {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+}
+
+.other {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .soft {
@@ -35,13 +42,30 @@
   align-items: center;
 }
 
-.soft ul li a {
+.soft .types ul li a {
   text-decoration: none;
   color: aqua;
   padding: 0.5rem;
 }
 
-.soft ul {
+.soft .types ul li:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+
+.soft .types ul li a:hover {
+  color: darkred;
+}
+
+.soft .types div ul {
   list-style-type: circle;
   list-style-position: inside;
+}
+
+.types {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
