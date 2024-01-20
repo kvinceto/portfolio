@@ -99,8 +99,25 @@ function Projects() {
         <p>
           Info:
           <span>
-            An internship organised by SoftUni and Podkrepi.bg for Junior
-            Software Developers and Junior Team Leaders.
+            An internship organised by{" "}
+            <a
+              href="https://softuni.bg/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View website"
+            >
+              SoftUni
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://podkrepi.bg/"
+              target="_blank"
+              title="View website"
+              rel="noopener noreferrer"
+            >
+              Podkrepi.bg
+            </a>{" "}
+            for Junior Software Developers and Junior Team Leaders.
           </span>
         </p>
         <p>

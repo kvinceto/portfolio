@@ -20,7 +20,7 @@ function About() {
   return (
     <section id="about" className={styles.aboutContainer}>
       <div>
-        <h2 className={styles.h2}>About Me</h2>
+        <h2 className={styles.header}>About Me</h2>
         <div className={styles.content}>
           <div className={styles.left}>
             <img src={profilePicture} alt="Profile picture of Krasimir Iliev" />

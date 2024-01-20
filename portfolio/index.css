@@ -7,4 +7,5 @@
 
 html {
   font: 18px/1.5 "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
 }

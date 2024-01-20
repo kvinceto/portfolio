@@ -62,7 +62,7 @@ function Skills() {
           <ul>
             <li>
               <img onClick={handleImageClick1} src={csharp} alt="CSharp logo" />
-              <span>C# Programming</span>
+              <span>C# Programming Language and .Net Framework</span>
             </li>
             {isPopupOpen1 && (
               <Popup imageUrl={csharp} onClose={handleClosePopup1} />
@@ -136,7 +136,7 @@ function Skills() {
           <ol>
             <li>
               <img onClick={handleImageClick8} src={problemsolving} alt="" />
-              Problem-solving:
+              Problem-solving
             </li>
             {isPopupOpen8 && (
               <Popup imageUrl={problemsolving} onClose={handleClosePopup8} />

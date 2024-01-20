@@ -40,11 +40,5 @@
 .text3 span {
   font-style: italic;
   opacity: 0.8;
-  color: lightskyblue;
-}
-
-.text4 span {
-  font-style: italic;
-  opacity: 0.8;
-  color: darkorchid;
+  color: darkviolet;
 }

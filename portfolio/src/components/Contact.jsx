@@ -1,16 +1,19 @@
 import styles from "../components/Contact.module.css";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faL, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [isClicked, setIsClicked] = useState(false);
+  const [message, setMessage] = useState("");
+  const [info, setInfo] = useState("");
 
   const iconStyles = {
     marginRight: "1rem",
@@ -22,6 +25,31 @@ function Contact() {
     width: "2rem",
     height: "2rem",
   };
+
+  function sendMessage() {
+    if (!message || !info) {
+      alert("All fields are required to send a message!");
+      return;
+    }
+    const obj = {
+      message,
+      info,
+    };
+
+    emailjs
+      .send("service_3l6cd7l", "template_4qmwu3b", obj, "UD-yZH0_5n_nv3DwV")
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        setMessage("");
+        setInfo("");
+        setIsClicked(false);
+        alert("Message send!");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        alert("Something went wrong! Try again!");
+      });
+  }
 
   return (
     <section id="contact" className={styles.contactContainer}>
@@ -65,7 +93,15 @@ function Contact() {
 
         <p>
           <FontAwesomeIcon icon={faPhone} style={iconStyles} />
-          Phone Number: +359 878 264 356
+          Phone Number:{" "}
+          <a
+            href="tel:+359 878 264 356"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Call me"
+          >
+            +359 878 264 356
+          </a>
         </p>
 
         <p>
@@ -109,15 +145,34 @@ function Contact() {
         </ul>
       </div>
       <div className={styles.contactForm}>
-        <p onClick={() => setIsClicked(true)}>Send me a message</p>
+        {!isClicked && (
+          <p onClick={() => setIsClicked(true)}>Send me a message</p>
+        )}
         {isClicked && (
           <div className={styles.message}>
+            <p className={styles.close} onClick={() => setIsClicked(false)}>
+              X
+            </p>
             <label htmlFor="contactMethod">Email of Phone number</label>
-            <input type="text" id="contactMethod" />
+            <input
+              type="text"
+              id="contactMethod"
+              value={info}
+              onChange={(e) => setInfo(e.target.value)}
+              placeholder="Example: example@example.com or +0359123456789"
+            />
             <label htmlFor="messageArea">Message</label>
-            <textarea id="messageArea" cols="30" rows="10"></textarea>
-            <p>
-              <a onClick={() => console.log}>Send</a>
+            <textarea
+              id="messageArea"
+              cols="30"
+              rows="10"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              maxLength="2000"
+              placeholder="Enter your message here"
+            ></textarea>
+            <p className={styles.sendP} onClick={sendMessage}>
+              Send
             </p>
           </div>
         )}

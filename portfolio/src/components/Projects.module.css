@@ -55,3 +55,13 @@
   margin-left: 1rem;
   color: bisque;
 }
+
+.projectDiv p span a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.projectDiv p span a:hover {
+  cursor: pointer;
+  color: blueviolet;
+}

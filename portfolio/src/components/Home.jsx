@@ -1,35 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../components/Home.module.css";
+import Typed from "typed.js";
 
 function Home() {
-  const [developerType, setDeveloperType] = useState("C# Web Developer");
+  const typedRef = useRef(null);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDeveloperType((prevType) =>
-        prevType === "C# Web Developer"
-          ? "Software Developer"
-          : "C# Web Developer"
-      );
-    }, 2000);
+    const typedOptions = {
+      strings: ["C# Developer", "Software Developer"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true,
+    };
 
-    return () => clearInterval(intervalId);
+    typedRef.current = new Typed(".typing", typedOptions);
+
+    return () => {
+      if (typedRef.current) {
+        typedRef.current.destroy();
+      }
+    };
   }, []);
 
   return (
     <section id="home" className={styles.homeContainer}>
       <div className={styles.text1}>Hello, This is</div>
       <div className={styles.text2}>Krasimir Iliev</div>
-      {developerType === "Software Developer" && (
-        <div className={styles.text3}>
-          And I'm a <span>{developerType}</span>
-        </div>
-      )}
-      {developerType === "C# Web Developer" && (
-        <div className={styles.text4}>
-          And I'm a <span>{developerType}</span>
-        </div>
-      )}
+      <div className={styles.text3}>
+        And I'm a <span className="typing"></span>
+      </div>
     </section>
   );
 }
