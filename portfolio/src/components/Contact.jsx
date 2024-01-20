@@ -1,5 +1,5 @@
 import styles from "../components/Contact.module.css";
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -10,6 +10,8 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
+  const [isClicked, setIsClicked] = useState(false);
+
   const iconStyles = {
     marginRight: "1rem",
     width: "1rem",
@@ -105,6 +107,20 @@ function Contact() {
             </a>
           </li>
         </ul>
+      </div>
+      <div className={styles.contactForm}>
+        <p onClick={() => setIsClicked(true)}>Send me a message</p>
+        {isClicked && (
+          <div className={styles.message}>
+            <label htmlFor="contactMethod">Email of Phone number</label>
+            <input type="text" id="contactMethod" />
+            <label htmlFor="messageArea">Message</label>
+            <textarea id="messageArea" cols="30" rows="10"></textarea>
+            <p>
+              <a onClick={() => console.log}>Send</a>
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

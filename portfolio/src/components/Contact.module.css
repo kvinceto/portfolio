@@ -49,3 +49,14 @@
   justify-content: center;
   gap: 2rem;
 }
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.message {
+  background-color: gray;
+  padding: 1rem;
+}
