@@ -22,6 +22,15 @@
   font-style: italic;
 }
 
+.projectsContainer .projectDiv h3 span {
+  color: antiquewhite;
+  display: block;
+  font-size: 1rem;
+  margin-left: 2rem;
+  text-align: justify;
+  padding: 0.5rem;
+}
+
 .projectsContainer .projectDiv h3 a:hover {
   text-decoration: underline;
   color: magenta;
@@ -30,10 +39,19 @@
 .projectDiv {
   margin: 1rem 0;
   width: 60%;
-  border-bottom: 1px dashed white;
-  padding-bottom: 1rem;
+  border: 1px dashed white;
+  padding: 2rem 2rem;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 100px;
 }
 
 .projectDiv h4 {
   margin: 1rem 0 0.5rem 0;
+}
+
+.projectDiv p span {
+  font-style: italic;
+  margin-left: 1rem;
+  color: bisque;
 }

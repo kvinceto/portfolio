@@ -68,14 +68,18 @@ function Contact() {
 
         <p>
           <FontAwesomeIcon icon={faLanguage} style={iconStyles} />
-          Languages Known: Bulgarian, English
+          Known languages: Bulgarian, English
         </p>
       </div>
 
       <div>
         <ul className={styles.social}>
           <li>
-            <a href="https://github.com/kvinceto" target="_blank" title="View my GitHub">
+            <a
+              href="https://github.com/kvinceto"
+              target="_blank"
+              title="View my GitHub"
+            >
               <FontAwesomeIcon icon={faGithub} style={socialIconsStyles} />
             </a>
           </li>

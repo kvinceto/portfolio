@@ -32,7 +32,7 @@ function Navigation() {
             href="#projects"
             title="Go check out the projects I have worked on"
           >
-            Projects
+            Projects & Experience
           </a>
         </li>
         <li>
