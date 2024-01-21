@@ -86,3 +86,35 @@
   object-fit: cover;
   border-radius: 6px;
 }
+
+@media only screen and (max-width: 960px) {
+  .aboutContainer div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutContainer div .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .aboutContainer div .content .left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .aboutContainer div .content .right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .aboutContainer .centeredLink a {
+    width: 10rem;
+    align-self: center;
+  }
+}

@@ -1,6 +1,12 @@
 import styles from "./Navigation.module.css";
 
 function Navigation() {
+  const inconStyles = {
+    width: "2rem",
+    height: "2rem",
+    padding: "1rem 2rem 0 0",
+  };
+
   return (
     <section className={styles.navContainer}>
       <p className={styles.logo}>

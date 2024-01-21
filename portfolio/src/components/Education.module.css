@@ -69,3 +69,19 @@
   flex-direction: row;
   justify-content: space-around;
 }
+
+@media only screen and (max-width: 960px){
+  .educationContainer .sertificates .soft .types {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5rem;
+  }
+
+  .educationContainer .sertificates .other .types {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5rem;
+  }
+}
