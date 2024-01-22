@@ -1,6 +1,7 @@
 import styles from "../components/About.module.css";
 import profilePicture from "../../public/IMG_20230909_191105064_HDR.jpg";
 import React, { useState, useEffect } from "react";
+import CV from "../../public/Krasimir's Resume.pdf";
 
 function About() {
   const [developerType, setDeveloperType] = useState("C# Web Developer");
@@ -67,12 +68,7 @@ function About() {
           </div>
         </div>
         <div className={styles.centeredLink}>
-          <a
-            href="img/JS Front-End - October 2023 - Certificate.pdf"
-            target="blank"
-            download
-            className={styles.buttonLink}
-          >
+          <a href={CV} target="blank" download className={styles.buttonLink}>
             Download CV
           </a>
         </div>
