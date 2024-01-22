@@ -47,7 +47,7 @@ function About() {
                 environment that encourages skill development.
               </li>
             </ul>
-            <div class={styles.text3}>Why Work With Me</div>
+            <div className={styles.text3}>Why Work With Me</div>
             <ul>
               <li>
                 I'am experienced in collaborating with individuals of diverse
