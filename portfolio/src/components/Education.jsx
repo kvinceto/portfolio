@@ -8,7 +8,17 @@ function Education() {
       <h2>My Education</h2>
       <div className={styles.sertificates}>
         <div className={styles.soft}>
-          <p>C# Web Delevoper - SoftUni</p>
+          <p>
+            C# Web Delevoper - SoftUni{" "}
+            <a
+              href="https://softuni.bg/certificates/details/201717/4f746c44"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View certificate"
+            >
+              <FontAwesomeIcon icon={faLink} />
+            </a>
+          </p>
           <div className={styles.types}>
             <div>
               Front - End

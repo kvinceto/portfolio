@@ -1,8 +1,8 @@
-# React + Vite
+# This is a React JS App created to serve as a portfolio website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Runing the app on your pc:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1) Pull the repo files on your pc.
+2) Open the project with VS Code.
+3) Open the terminal and go to 'portfolio' folder and enter the command: ```npm install```.
+4) After the instalation is ready enter: ```npm run dev``` and open the app in the browser.
