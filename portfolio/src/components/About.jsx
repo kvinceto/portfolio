@@ -1,7 +1,7 @@
 import styles from "../components/About.module.css";
 import profilePicture from "../../public/IMG_20230909_191105064_HDR.jpg";
 import React, { useState, useEffect } from "react";
-import CV from "../../public/Krasimir's Resume.pdf";
+import CV from "../../public/cv.pdf";
 
 function About() {
   const [developerType, setDeveloperType] = useState("C# Web Developer");
