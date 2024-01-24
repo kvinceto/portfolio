@@ -1,5 +1,5 @@
 import styles from "../components/About.module.css";
-import profilePicture from "../../public/IMG_20230909_191105064_HDR.jpg";
+import profilePicture from "../../krasimir.jpg";
 import React, { useState, useEffect } from "react";
 import CV from "../../public/cv.pdf";
 
