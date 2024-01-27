@@ -32,7 +32,7 @@ function Projects() {
           &#x25CD; C#, ASP.NET Core, Entity Framework Core, MS SQL
         </p>
         <p>
-          Front - End: <br /> &#x25CD; React JS, Java Script, HTML, CSS
+          Front - End: <br /> &#x25CD; React JS, JavaScript, HTML, CSS
         </p>
       </div>
       <div className={styles.projectDiv}>
@@ -84,7 +84,7 @@ function Projects() {
         <p>A React JS portfolio / CV site</p>
         <h4>Technologies used to build:</h4>
         <p>
-          Front - End: <br /> &#x25CD; React JS, Java Script, HTML, CSS
+          Front - End: <br /> &#x25CD; React JS, JavaScript, HTML, CSS
         </p>
       </div>
       <h2>My professional experience</h2>

@@ -102,7 +102,7 @@ function Skills() {
                 src={js}
                 alt="Java Script logo"
               />
-              Java Script
+              JavaScript
             </li>
             {isPopupOpen5 && (
               <Popup imageUrl={js} onClose={handleClosePopup5} />
