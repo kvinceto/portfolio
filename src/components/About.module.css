@@ -34,7 +34,7 @@
 .aboutContainer .header {
   text-align: center;
   font-size: 2em;
-  padding: 1em 0.5em;
+  padding-bottom: 0.5rem;
 }
 
 .content {
@@ -116,5 +116,12 @@
   .aboutContainer .centeredLink a {
     width: 10rem;
     align-self: center;
+  }
+
+  .left img {
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    border-radius: 6px;
   }
 }
