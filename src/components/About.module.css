@@ -24,6 +24,7 @@
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  border: 1px solid transparent;
 }
 
 .aboutContainer .buttonLink:hover {
