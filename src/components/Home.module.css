@@ -42,3 +42,12 @@
   opacity: 0.8;
   color: darkviolet;
 }
+
+@media only screen and (max-width: 960px) {
+  .text1,
+  .text2,
+  .text3,
+  .text4 {
+    margin-left: 1rem;
+  }
+}
