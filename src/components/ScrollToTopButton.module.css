@@ -1,0 +1,17 @@
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #1e3551;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+  z-index: 9999;
+}
