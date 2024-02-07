@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import certific from "../../public/intern.pdf";
 
 function Projects() {
   return (
@@ -17,7 +18,7 @@ function Projects() {
             Bicycle Management eXtreme- BMX <FontAwesomeIcon icon={faLink} />
           </a>
           <span>
-            ASP.NET Core RESTfull api + React JS <br />A project created in a
+            ASP.NET Core RESTful api + React JS <br />A project created in a
             team of 4 developers as part of an internship (“Intern & Team Lead
             Academy - SoftUni 2023-2024”)
           </span>
@@ -91,7 +92,7 @@ function Projects() {
       <div className={styles.projectDiv}>
         <h3>Intern & Team Lead Academy - SoftUni 2023-2024</h3>
         <p>
-          Duration: <span>11.2023 - 01.2024</span>
+          Duration: <span>11.2023 - 02.2024</span>
         </p>
         <p>
           Position: <span>Fullstack developer</span>
@@ -121,8 +122,13 @@ function Projects() {
           </span>
         </p>
         <p>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            Certificate
+          <a
+            className={styles.cert}
+            href={certific}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Certificate
           </a>
         </p>
       </div>

@@ -51,7 +51,7 @@ function About() {
             <div className={styles.text3}>Why Work With Me</div>
             <ul>
               <li>
-                I'am experienced in collaborating with individuals of diverse
+                I am experienced in collaborating with individuals of diverse
                 age groups, fostering effective communication and teamwork
                 across various demographics.
               </li>

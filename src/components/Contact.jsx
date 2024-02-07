@@ -104,9 +104,19 @@ function Contact() {
           </a>
         </p>
 
-        <p>
-          <FontAwesomeIcon icon={faLanguage} style={iconStyles} />
-          Known languages: Bulgarian, English
+        <p className={styles.language}>
+          <span>
+            <FontAwesomeIcon icon={faLanguage} style={iconStyles} />
+            Known languages:
+          </span>
+          <span>
+            <b>Bulgarian: </b>
+            <i>Native or Bilingual Proficiency</i>
+          </span>
+          <span>
+            <b>English: </b>
+            <i>Full Professional Proficiency</i>
+          </span>
         </p>
       </div>
 
