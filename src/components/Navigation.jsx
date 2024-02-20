@@ -1,20 +1,14 @@
 import styles from "./Navigation.module.css";
 
 function Navigation() {
-  const inconStyles = {
-    width: "2rem",
-    height: "2rem",
-    padding: "1rem 2rem 0 0",
-  };
-
   return (
     <section className={styles.navContainer}>
       <p className={styles.logo}>
-        <a href="#home">Portfolio</a>
+        <a href="">Portfolio</a>
       </p>
       <ul>
         <li>
-          <a href="#home" title="Go to the Home section">
+          <a href="" title="Go to the Home section">
             Home
           </a>
         </li>
