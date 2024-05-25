@@ -13,6 +13,11 @@ import timeman from "../../public/timeman.png";
 import adap from "../../public/adap.png";
 import team from "../../public/team.jfif";
 import comunication from "../../public/comunication.jfif";
+import flutter from "../../public/flutter.png";
+import dart from "../../public/dart.png";
+import blazor from "../../public/blazor.jpeg";
+import dapper from "../../public/dapper.png";
+import firebase from "../../public/firebase.png";
 
 function Skills() {
   const [isPopupOpen1, setPopupOpen1] = useState(false);
@@ -27,6 +32,11 @@ function Skills() {
   const [isPopupOpen10, setPopupOpen10] = useState(false);
   const [isPopupOpen11, setPopupOpen11] = useState(false);
   const [isPopupOpen12, setPopupOpen12] = useState(false);
+  const [isPopupOpen13, setPopupOpen13] = useState(false);
+  const [isPopupOpen14, setPopupOpen14] = useState(false);
+  const [isPopupOpen15, setPopupOpen15] = useState(false);
+  const [isPopupOpen16, setPopupOpen16] = useState(false);
+  const [isPopupOpen17, setPopupOpen17] = useState(false);
 
   const handleImageClick1 = () => setPopupOpen1(true);
   const handleClosePopup1 = () => setPopupOpen1(false);
@@ -52,14 +62,25 @@ function Skills() {
   const handleClosePopup11 = () => setPopupOpen11(false);
   const handleImageClick12 = () => setPopupOpen12(true);
   const handleClosePopup12 = () => setPopupOpen12(false);
+  const handleImageClick13 = () => setPopupOpen13(true);
+  const handleClosePopup13 = () => setPopupOpen13(false);
+  const handleImageClick14 = () => setPopupOpen14(true);
+  const handleClosePopup14 = () => setPopupOpen14(false);
+  const handleImageClick15 = () => setPopupOpen15(true);
+  const handleClosePopup15 = () => setPopupOpen15(false);
+  const handleImageClick16 = () => setPopupOpen16(true);
+  const handleClosePopup16 = () => setPopupOpen16(false);
+  const handleImageClick17 = () => setPopupOpen17(true);
+  const handleClosePopup17 = () => setPopupOpen17(false);
 
   return (
     <section id="skills" className={styles.skillsContainer}>
       <h2>Skills</h2>
       <div className={styles.innerSkilsContainer}>
         <div>
-          Technical Skills
+          <strong><em>Technical Skills</em></strong>
           <ul>
+            {/* C# */}
             <li>
               <img onClick={handleImageClick1} src={csharp} alt="CSharp logo" />
               <span>C# Programming Language and .Net Framework</span>
@@ -67,6 +88,7 @@ function Skills() {
             {isPopupOpen1 && (
               <Popup imageUrl={csharp} onClose={handleClosePopup1} />
             )}
+            {/* ASP.NET Core */}
             <li>
               <img
                 onClick={handleImageClick2}
@@ -78,96 +100,181 @@ function Skills() {
             {isPopupOpen2 && (
               <Popup imageUrl={aspnetcore} onClose={handleClosePopup2} />
             )}
+            {/* Blazor */}
             <li>
               <img
                 onClick={handleImageClick3}
+                src={blazor}
+                alt="Blazor logo"
+              />
+              Blazor (MVVM pattern)
+            </li>
+            {isPopupOpen3 && (
+              <Popup imageUrl={blazor} onClose={handleClosePopup3} />
+            )}
+            {/* EF Core */}
+            <li>
+              <img
+                onClick={handleImageClick4}
                 src={efcore}
                 alt="Entity Framework Core logo"
               />
               Entity Framework Core
             </li>
-            {isPopupOpen3 && (
-              <Popup imageUrl={efcore} onClose={handleClosePopup3} />
-            )}
-            <li>
-              <img onClick={handleImageClick4} src={sql} alt="MS SQL logo" />
-              MS SQL (T-SQL)
-            </li>
             {isPopupOpen4 && (
-              <Popup imageUrl={sql} onClose={handleClosePopup4} />
+              <Popup imageUrl={efcore} onClose={handleClosePopup4} />
             )}
+            {/* Dapper */}
             <li>
               <img
                 onClick={handleImageClick5}
+                src={dapper}
+                alt="Dapper logo" />
+              Dapper ORM
+            </li>
+            {isPopupOpen5 && (
+              <Popup imageUrl={dapper} onClose={handleClosePopup5} />
+            )}
+            {/* MS SQL */}
+            <li>
+              <img
+                onClick={handleImageClick6}
+                src={sql}
+                alt="MS SQL logo" />
+              MS SQL (T-SQL)
+            </li>
+            {isPopupOpen6 && (
+              <Popup imageUrl={sql} onClose={handleClosePopup6} />
+            )}
+            {/* Firebase */}
+            <li>
+              <img
+                onClick={handleImageClick17}
+                src={firebase}
+                alt="Firebase logo" />
+              Firebase
+            </li>
+            {isPopupOpen17 && (
+              <Popup imageUrl={firebase} onClose={handleClosePopup17} />
+            )}
+            {/* JS */}
+            <li>
+              <img
+                onClick={handleImageClick7}
                 src={js}
                 alt="Java Script logo"
               />
               JavaScript
             </li>
-            {isPopupOpen5 && (
-              <Popup imageUrl={js} onClose={handleClosePopup5} />
+            {isPopupOpen7 && (
+              <Popup imageUrl={js} onClose={handleClosePopup7} />
             )}
+            {/* HTML CSS */}
             <li>
               <img
-                onClick={handleImageClick6}
+                onClick={handleImageClick8}
                 src={htmlcss}
                 alt="HTML & CSS logo"
               />
               HTML & CSS
             </li>
-            {isPopupOpen6 && (
-              <Popup imageUrl={htmlcss} onClose={handleClosePopup6} />
+            {isPopupOpen8 && (
+              <Popup imageUrl={htmlcss} onClose={handleClosePopup8} />
             )}
+            {/* React */}
             <li>
               <img
-                onClick={handleImageClick7}
+                onClick={handleImageClick9}
                 src={react}
                 alt="React JS logo"
               />
               React JS
             </li>
-            {isPopupOpen7 && (
-              <Popup imageUrl={react} onClose={handleClosePopup7} />
+            {isPopupOpen9 && (
+              <Popup imageUrl={react} onClose={handleClosePopup9} />
+            )}
+            <li>
+              <img
+                onClick={handleImageClick10}
+                src={flutter}
+                alt="Flutter logo"
+              />
+              Flutter Framework
+            </li>
+            {isPopupOpen10 && (
+              <Popup imageUrl={flutter} onClose={handleClosePopup10} />
+            )}
+            {/* Dart */}
+            <li>
+              <img
+                onClick={handleImageClick11}
+                src={dart}
+                alt="Dart logo"
+              />
+              Dart Programming Language
+            </li>
+            {isPopupOpen11 && (
+              <Popup imageUrl={dart} onClose={handleClosePopup11} />
             )}
           </ul>
         </div>
         <div>
-          Soft Skills
+          <strong><em>Soft Skills</em></strong>
           <ol>
+            {/* PS */}
             <li>
-              <img onClick={handleImageClick8} src={problemsolving} alt="" />
+              <img
+                onClick={handleImageClick12}
+                src={problemsolving}
+                alt="Problem-solving image" />
               Problem-solving
             </li>
-            {isPopupOpen8 && (
-              <Popup imageUrl={problemsolving} onClose={handleClosePopup8} />
+            {isPopupOpen12 && (
+              <Popup imageUrl={problemsolving} onClose={handleClosePopup12} />
             )}
+            {/* TM */}
             <li>
-              <img onClick={handleImageClick9} src={timeman} alt="" />
+              <img
+                onClick={handleImageClick13}
+                src={timeman}
+                alt="Time management image" />
               Time Management
             </li>
-            {isPopupOpen9 && (
-              <Popup imageUrl={timeman} onClose={handleClosePopup9} />
+            {isPopupOpen13 && (
+              <Popup imageUrl={timeman} onClose={handleClosePopup13} />
             )}
+            {/* Adaptability */}
             <li>
-              <img onClick={handleImageClick10} src={adap} alt="" />
+              <img
+                onClick={handleImageClick14}
+                src={adap}
+                alt="Adaptability image" />
               Adaptability
             </li>
-            {isPopupOpen10 && (
-              <Popup imageUrl={adap} onClose={handleClosePopup10} />
+            {isPopupOpen14 && (
+              <Popup imageUrl={adap} onClose={handleClosePopup14} />
             )}
+            {/* Teamwork */}
             <li>
-              <img onClick={handleImageClick11} src={team} alt="" />
+              <img
+                onClick={handleImageClick15}
+                src={team}
+                alt="Teamwork" />
               Teamwork
             </li>
-            {isPopupOpen11 && (
-              <Popup imageUrl={team} onClose={handleClosePopup11} />
+            {isPopupOpen15 && (
+              <Popup imageUrl={team} onClose={handleClosePopup15} />
             )}
+            {/* Communication */}
             <li>
-              <img onClick={handleImageClick12} src={comunication} alt="" />
+              <img
+                onClick={handleImageClick16}
+                src={comunication}
+                alt="Communication image" />
               Communication
             </li>
-            {isPopupOpen12 && (
-              <Popup imageUrl={comunication} onClose={handleClosePopup12} />
+            {isPopupOpen16 && (
+              <Popup imageUrl={comunication} onClose={handleClosePopup16} />
             )}
           </ol>
         </div>

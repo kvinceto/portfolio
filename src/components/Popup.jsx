@@ -1,5 +1,3 @@
-// Popup.js
-import React from "react";
 import styles from "./Popup.module.css";
 
 const Popup = ({ imageUrl, onClose }) => {

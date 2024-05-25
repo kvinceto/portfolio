@@ -6,7 +6,7 @@ import certific from "../../public/intern.pdf";
 function Projects() {
   return (
     <section id="projects" className={styles.projectsContainer}>
-      <h2>All the projects I have worked on</h2>
+      <h2>Here are some of the projects I have worked on</h2>
       <div className={styles.projectDiv}>
         <h3>
           <a
@@ -39,6 +39,34 @@ function Projects() {
       <div className={styles.projectDiv}>
         <h3>
           <a
+            href="https://github.com/Cost-Effective-Software-Project-11/gp5"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View GitHub repo"
+          >
+            GP5 <FontAwesomeIcon icon={faLink} />
+          </a>
+          <span>
+            Flutter application <br />A project created in a
+            team of 5 developers as part of an internship (“Intern & Team Lead
+            Academy - SoftUni 2024 season 2”)
+          </span>
+        </h3>
+        <p>
+          The application is a mobile app for doctors and patients.
+        </p>
+        <h4>Technologies used to build:</h4>
+        <p>
+          Back - End: <br />
+          &#x25CD; Dart language, Firebase
+        </p>
+        <p>
+          Front - End: <br /> &#x25CD; Flutter
+        </p>
+      </div>
+      <div className={styles.projectDiv}>
+        <h3>
+          <a
             href="https://github.com/kvinceto/Vehicle-Manager-Platform"
             target="_blank"
             rel="noopener noreferrer"
@@ -64,7 +92,7 @@ function Projects() {
           &#x25CD; C#, ASP.NET Core, Entity Framework Core, MS SQL
         </p>
         <p>
-          Front - End: <br /> &#x25CD; Razor pages, Bootstrap, HTML, CSS
+          Front - End: <br /> &#x25CD; Razor pages, Bootstrap 5, HTML, CSS
         </p>
       </div>
       <div className={styles.projectDiv}>
@@ -86,6 +114,31 @@ function Projects() {
         <h4>Technologies used to build:</h4>
         <p>
           Front - End: <br /> &#x25CD; React JS, JavaScript, HTML, CSS
+        </p>
+      </div>
+      <div className={styles.projectDiv}>
+        <h3>
+          <a
+            href="https://github.com/kvinceto/BlazorItemsManagerWebApp"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View GitHub repo"
+          >
+            Blazor web app <FontAwesomeIcon icon={faLink} />
+          </a>
+          <span>
+            Blazor Web Application <br />
+            Project created as part of an assignment to learn Blazor, Dapper and DevExpress Controls
+          </span>
+        </h3>
+        <p>A Blazor Web Application</p>
+        <h4>Technologies used to build:</h4>
+        <p>
+          Back - End: <br />
+          &#x25CD; C#, ASP.NET Core, Dapper ORM, MS SQL
+        </p>
+        <p>
+          Front - End: <br /> &#x25CD; Blazor, Razor pages, Bootstrap 5, HTML, CSS, DevExpress Grid
         </p>
       </div>
       <h2>My professional experience</h2>
